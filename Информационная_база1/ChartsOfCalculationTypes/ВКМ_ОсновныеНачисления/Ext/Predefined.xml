@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CalculationTypePredefinedItems" version="2.15">
+	<Item id="d9642876-d20a-4bad-a4e5-327554befccf">
+		<Name>Оклад</Name>
+		<Code>1</Code>
+		<Description>Оклад</Description>
+		<ActionPeriodIsBase>false</ActionPeriodIsBase>
+		<Displaced>
+			<CalculationType>ChartOfCalculationTypes.ВКМ_ОсновныеНачисления.Отпуск</CalculationType>
+		</Displaced>
+	</Item>
+	<Item id="0c4b3f13-2104-4901-bc65-df363b0b596c">
+		<Name>Отпуск</Name>
+		<Code>2</Code>
+		<Description>Отпуск</Description>
+		<ActionPeriodIsBase>false</ActionPeriodIsBase>
+		<Base>
+			<CalculationType>ChartOfCalculationTypes.ВКМ_ОсновныеНачисления.Оклад</CalculationType>
+			<CalculationType>ChartOfCalculationTypes.ВКМ_ОсновныеНачисления.Отпуск</CalculationType>
+		</Base>
+	</Item>
+</PredefinedData>

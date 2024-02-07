@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<UsualGroup name="ГруппаНомерДата" id="116">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа номер дата</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа номер дата</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаНомерДатаРасширеннаяПодсказка" id="117"/>
+			<ChildItems>
+				<InputField name="Номер" id="1">
+					<DataPath>Объект.Number</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+				</InputField>
+				<InputField name="Дата" id="4">
+					<DataPath>Объект.Date</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="СписокСотрудников" id="88">
+			<Representation>List</Representation>
+			<DataPath>Объект.СписокСотрудников</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="СписокСотрудниковКонтекстноеМеню" id="90"/>
+			<AutoCommandBar name="СписокСотрудниковКоманднаяПанель" id="89"/>
+			<ExtendedTooltip name="СписокСотрудниковРасширеннаяПодсказка" id="91"/>
+			<SearchStringAddition name="СписокСотрудниковСтрокаПоиска" id="92">
+				<AdditionSource>
+					<Item>СписокСотрудников</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСотрудниковСтрокаПоискаКонтекстноеМеню" id="93"/>
+				<ExtendedTooltip name="СписокСотрудниковСтрокаПоискаРасширеннаяПодсказка" id="94"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокСотрудниковСостояниеПросмотра" id="98">
+				<AdditionSource>
+					<Item>СписокСотрудников</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСотрудниковСостояниеПросмотраКонтекстноеМеню" id="99"/>
+				<ExtendedTooltip name="СписокСотрудниковСостояниеПросмотраРасширеннаяПодсказка" id="100"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокСотрудниковУправлениеПоиском" id="95">
+				<AdditionSource>
+					<Item>СписокСотрудников</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСотрудниковУправлениеПоискомКонтекстноеМеню" id="96"/>
+				<ExtendedTooltip name="СписокСотрудниковУправлениеПоискомРасширеннаяПодсказка" id="97"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<InputField name="СписокСотрудниковНомерСтроки" id="101">
+					<DataPath>Объект.СписокСотрудников.LineNumber</DataPath>
+					<ContextMenu name="СписокСотрудниковНомерСтрокиКонтекстноеМеню" id="102"/>
+					<ExtendedTooltip name="СписокСотрудниковНомерСтрокиРасширеннаяПодсказка" id="103"/>
+				</InputField>
+				<InputField name="СписокСотрудниковСотрудник" id="104">
+					<DataPath>Объект.СписокСотрудников.Сотрудник</DataPath>
+					<ContextMenu name="СписокСотрудниковСотрудникКонтекстноеМеню" id="105"/>
+					<ExtendedTooltip name="СписокСотрудниковСотрудникРасширеннаяПодсказка" id="106"/>
+				</InputField>
+				<InputField name="СписокСотрудниковВидРасчета" id="107">
+					<DataPath>Объект.СписокСотрудников.ВидРасчета</DataPath>
+					<ContextMenu name="СписокСотрудниковВидРасчетаКонтекстноеМеню" id="108"/>
+					<ExtendedTooltip name="СписокСотрудниковВидРасчетаРасширеннаяПодсказка" id="109"/>
+				</InputField>
+				<InputField name="СписокСотрудниковСуммаНачисления" id="110">
+					<DataPath>Объект.СписокСотрудников.СуммаНачисления</DataPath>
+					<ContextMenu name="СписокСотрудниковСуммаНачисленияКонтекстноеМеню" id="111"/>
+					<ExtendedTooltip name="СписокСотрудниковСуммаНачисленияРасширеннаяПодсказка" id="112"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<UsualGroup name="ГруппаПодвал" id="121">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа подвал</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа подвал</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаПодвалРасширеннаяПодсказка" id="122"/>
+			<ChildItems>
+				<InputField name="Ответственный" id="123">
+					<DataPath>Объект.Ответственный</DataPath>
+					<ContextMenu name="ОтветственныйКонтекстноеМеню" id="124"/>
+					<ExtendedTooltip name="ОтветственныйРасширеннаяПодсказка" id="125"/>
+				</InputField>
+				<InputField name="Комментарий" id="118">
+					<DataPath>Объект.Комментарий</DataPath>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<ContextMenu name="КомментарийКонтекстноеМеню" id="119"/>
+					<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="120"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.ВКМ_НачислениеФиксированнойПремии</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+</Form>

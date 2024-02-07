@@ -1,0 +1,364 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<CommandsVisibility>
+		<Command name="Document.ВКМ_ОбслуживаниеКлиента.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.ВКМ_ЗарплатаИКадры">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="Document.РеализацияТоваровУслуг.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.ВКМ_УведомленияТелеграмБоту.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.ВКМ_НачислениеЗарплаты.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.ВКМ_НачислениеФиксированнойПремии.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.ВКМ_ВыплатаЗарплаты.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.ВКМ_ГрафикОтпусков.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.Контрагенты.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.Номенклатура.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.ВКМ_ФизическиеЛица.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ВКМ_ЗарплатаИКадры">true</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.ВКМ_Подразделения.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ВКМ_ЗарплатаИКадры">true</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.ВКМ_ГрафикиРаботы.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ВКМ_ЗарплатаИКадры">true</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="AccumulationRegister.ВКМ_ВзаиморасчетыССотрудниками.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ВКМ_ЗарплатаИКадры">true</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="AccumulationRegister.ВКМ_ВыполненныеКлиентуРаботы.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="AccumulationRegister.ВКМ_ВыполненныеСотрудникомРаботы.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.ВКМ_ГрафикиРаботы.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ВКМ_ЗарплатаИКадры">true</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.ВКМ_УсловияОплатыСотрудников.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ВКМ_ЗарплатаИКадры">true</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.ВКМ_ГрафикОтпусков.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ВКМ_ЗарплатаИКадры">true</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="CalculationRegister.ВКМ_ОсновныеНачисления.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ВКМ_ЗарплатаИКадры">true</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="CalculationRegister.ВКМ_ДополнительныеНачисления.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ВКМ_ЗарплатаИКадры">true</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="CalculationRegister.ВКМ_Удержания.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ВКМ_ЗарплатаИКадры">true</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="ChartOfCalculationTypes.ВКМ_ОсновныеНачисления.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ВКМ_ЗарплатаИКадры">true</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="ChartOfCalculationTypes.ВКМ_ДополнительныеНачисления.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ВКМ_ЗарплатаИКадры">true</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="ChartOfCalculationTypes.ВКМ_Удержания.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ВКМ_ЗарплатаИКадры">true</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="Document.ВКМ_ВыплатаЗарплаты.StandardCommand.Create">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.ВКМ_ГрафикОтпусков.StandardCommand.Create">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.ВКМ_НачислениеЗарплаты.StandardCommand.Create">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.ВКМ_НачислениеФиксированнойПремии.StandardCommand.Create">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.ВКМ_ОбслуживаниеКлиента.StandardCommand.Create">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+	</CommandsVisibility>
+	<CommandsPlacement>
+		<Command name="Document.ВКМ_ОбслуживаниеКлиента.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ВКМ_ОбслуживаниеКлиентов</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Document.РеализацияТоваровУслуг.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ВКМ_ОбслуживаниеКлиентов</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Catalog.ВКМ_УведомленияТелеграмБоту.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ВКМ_ОбслуживаниеКлиентов</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Document.ВКМ_НачислениеЗарплаты.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ВКМ_ЗаработнаяПлата</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Document.ВКМ_НачислениеФиксированнойПремии.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ВКМ_ЗаработнаяПлата</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Document.ВКМ_ВыплатаЗарплаты.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ВКМ_ЗаработнаяПлата</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Document.ВКМ_ГрафикОтпусков.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ВКМ_ЗаработнаяПлата</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Catalog.Контрагенты.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ВКМ_Справочники</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Catalog.Номенклатура.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ВКМ_Справочники</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Catalog.ВКМ_ФизическиеЛица.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ВКМ_Справочники</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Catalog.ВКМ_Подразделения.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ВКМ_Справочники</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Catalog.ВКМ_ГрафикиРаботы.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ВКМ_Справочники</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="AccumulationRegister.ВКМ_ВзаиморасчетыССотрудниками.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ВКМ_РегистрыНакопления</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="AccumulationRegister.ВКМ_ВыполненныеКлиентуРаботы.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ВКМ_РегистрыНакопления</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="AccumulationRegister.ВКМ_ВыполненныеСотрудникомРаботы.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ВКМ_РегистрыНакопления</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="InformationRegister.ВКМ_ГрафикиРаботы.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ВКМ_РегистрыСведений</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="InformationRegister.ВКМ_УсловияОплатыСотрудников.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ВКМ_РегистрыСведений</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="InformationRegister.ВКМ_ГрафикОтпусков.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ВКМ_РегистрыСведений</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="CalculationRegister.ВКМ_ОсновныеНачисления.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ВКМ_РегистрыРасчета</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="CalculationRegister.ВКМ_ДополнительныеНачисления.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ВКМ_РегистрыРасчета</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="CalculationRegister.ВКМ_Удержания.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ВКМ_РегистрыРасчета</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="ChartOfCalculationTypes.ВКМ_ОсновныеНачисления.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="ChartOfCalculationTypes.ВКМ_ДополнительныеНачисления.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="ChartOfCalculationTypes.ВКМ_Удержания.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+	</CommandsPlacement>
+	<CommandsOrder>
+		<Command name="Document.ВКМ_ОбслуживаниеКлиента.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ВКМ_ОбслуживаниеКлиентов</CommandGroup>
+		</Command>
+		<Command name="Document.РеализацияТоваровУслуг.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ВКМ_ОбслуживаниеКлиентов</CommandGroup>
+		</Command>
+		<Command name="Catalog.ВКМ_УведомленияТелеграмБоту.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ВКМ_ОбслуживаниеКлиентов</CommandGroup>
+		</Command>
+		<Command name="Document.ВКМ_НачислениеЗарплаты.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ВКМ_ЗаработнаяПлата</CommandGroup>
+		</Command>
+		<Command name="Document.ВКМ_НачислениеФиксированнойПремии.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ВКМ_ЗаработнаяПлата</CommandGroup>
+		</Command>
+		<Command name="Document.ВКМ_ВыплатаЗарплаты.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ВКМ_ЗаработнаяПлата</CommandGroup>
+		</Command>
+		<Command name="Document.ВКМ_ГрафикОтпусков.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ВКМ_ЗаработнаяПлата</CommandGroup>
+		</Command>
+		<Command name="Catalog.Контрагенты.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ВКМ_Справочники</CommandGroup>
+		</Command>
+		<Command name="Catalog.Номенклатура.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ВКМ_Справочники</CommandGroup>
+		</Command>
+		<Command name="Catalog.ВКМ_ФизическиеЛица.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ВКМ_Справочники</CommandGroup>
+		</Command>
+		<Command name="Catalog.ВКМ_Подразделения.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ВКМ_Справочники</CommandGroup>
+		</Command>
+		<Command name="Catalog.ВКМ_ГрафикиРаботы.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ВКМ_Справочники</CommandGroup>
+		</Command>
+		<Command name="AccumulationRegister.ВКМ_ВзаиморасчетыССотрудниками.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ВКМ_РегистрыНакопления</CommandGroup>
+		</Command>
+		<Command name="AccumulationRegister.ВКМ_ВыполненныеКлиентуРаботы.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ВКМ_РегистрыНакопления</CommandGroup>
+		</Command>
+		<Command name="AccumulationRegister.ВКМ_ВыполненныеСотрудникомРаботы.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ВКМ_РегистрыНакопления</CommandGroup>
+		</Command>
+		<Command name="InformationRegister.ВКМ_ГрафикиРаботы.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ВКМ_РегистрыСведений</CommandGroup>
+		</Command>
+		<Command name="InformationRegister.ВКМ_УсловияОплатыСотрудников.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ВКМ_РегистрыСведений</CommandGroup>
+		</Command>
+		<Command name="InformationRegister.ВКМ_ГрафикОтпусков.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ВКМ_РегистрыСведений</CommandGroup>
+		</Command>
+		<Command name="CalculationRegister.ВКМ_ОсновныеНачисления.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ВКМ_РегистрыРасчета</CommandGroup>
+		</Command>
+		<Command name="CalculationRegister.ВКМ_ДополнительныеНачисления.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ВКМ_РегистрыРасчета</CommandGroup>
+		</Command>
+		<Command name="CalculationRegister.ВКМ_Удержания.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ВКМ_РегистрыРасчета</CommandGroup>
+		</Command>
+		<Command name="ChartOfCalculationTypes.ВКМ_ОсновныеНачисления.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+		</Command>
+		<Command name="ChartOfCalculationTypes.ВКМ_ДополнительныеНачисления.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+		</Command>
+		<Command name="ChartOfCalculationTypes.ВКМ_Удержания.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+		</Command>
+		<Command name="Constant.ВКМ_НоменклатураАбонентскаяПлата.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="Constant.ВКМ_НоменклатураРаботыСпециалиста.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="Constant.ВКМ_ТокенУправленияТелеграмБотом.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="Constant.ВКМ_ИдентификаторГруппыОповещения.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ВКМ_ЗаполнениеГрафикаРаботы.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ВКМ_МассовоеСозданиеАктов.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+	</CommandsOrder>
+	<GroupsOrder>
+		<Group>CommandGroup.ВКМ_ОбслуживаниеКлиентов</Group>
+		<Group>CommandGroup.ВКМ_ЗаработнаяПлата</Group>
+		<Group>CommandGroup.ВКМ_Справочники</Group>
+		<Group>CommandGroup.ВКМ_РегистрыНакопления</Group>
+		<Group>CommandGroup.ВКМ_РегистрыСведений</Group>
+		<Group>CommandGroup.ВКМ_РегистрыРасчета</Group>
+		<Group>NavigationPanelSeeAlso</Group>
+		<Group>ActionsPanelTools</Group>
+	</GroupsOrder>
+</CommandInterface>

@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаСоздатьДокументы" id="26">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.СоздатьДокументы</CommandName>
+				<ExtendedTooltip name="ФормаСоздатьДокументыРасширеннаяПодсказка" id="27"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<ChildItems>
+		<InputField name="Период" id="1">
+			<DataPath>Объект.Период</DataPath>
+			<EditFormat>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ДФ=ММMM.yyyy</v8:content>
+				</v8:item>
+			</EditFormat>
+			<ContextMenu name="ПериодКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ПериодРасширеннаяПодсказка" id="3"/>
+			<Events>
+				<Event name="OnChange">ПериодПриИзменении</Event>
+			</Events>
+		</InputField>
+		<Table name="СписокРеализаций" id="4">
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.СписокРеализаций</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="СписокРеализацийКонтекстноеМеню" id="5"/>
+			<AutoCommandBar name="СписокРеализацийКоманднаяПанель" id="6"/>
+			<ExtendedTooltip name="СписокРеализацийРасширеннаяПодсказка" id="7"/>
+			<SearchStringAddition name="СписокРеализацийСтрокаПоиска" id="8">
+				<AdditionSource>
+					<Item>СписокРеализаций</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокРеализацийСтрокаПоискаКонтекстноеМеню" id="9"/>
+				<ExtendedTooltip name="СписокРеализацийСтрокаПоискаРасширеннаяПодсказка" id="10"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокРеализацийСостояниеПросмотра" id="11">
+				<AdditionSource>
+					<Item>СписокРеализаций</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокРеализацийСостояниеПросмотраКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="СписокРеализацийСостояниеПросмотраРасширеннаяПодсказка" id="13"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокРеализацийУправлениеПоиском" id="14">
+				<AdditionSource>
+					<Item>СписокРеализаций</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокРеализацийУправлениеПоискомКонтекстноеМеню" id="15"/>
+				<ExtendedTooltip name="СписокРеализацийУправлениеПоискомРасширеннаяПодсказка" id="16"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<InputField name="СписокРеализацийДоговор" id="20">
+					<DataPath>Объект.СписокРеализаций.Договор</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СписокРеализацийДоговорКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="СписокРеализацийДоговорРасширеннаяПодсказка" id="22"/>
+				</InputField>
+				<InputField name="СписокРеализацийРеализация" id="23">
+					<DataPath>Объект.СписокРеализаций.Реализация</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СписокРеализацийРеализацияКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="СписокРеализацийРеализацияРасширеннаяПодсказка" id="25"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ВКМ_МассовоеСозданиеАктов</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="СоздатьДокументы" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать документы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать документы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьДокументы</Action>
+		</Command>
+	</Commands>
+</Form>

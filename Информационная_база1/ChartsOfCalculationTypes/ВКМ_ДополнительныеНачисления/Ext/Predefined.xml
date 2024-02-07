@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CalculationTypePredefinedItems" version="2.15">
+	<Item id="f7e1d9a9-94d4-4711-809b-1d3bcc576746">
+		<Name>ПремияОтПродаж</Name>
+		<Code>2</Code>
+		<Description>Премия от продаж</Description>
+		<ActionPeriodIsBase>false</ActionPeriodIsBase>
+	</Item>
+	<Item id="8f5ab84a-ccdd-482c-a3a0-dd5b428f1357">
+		<Name>ПремияФиксированная</Name>
+		<Code>1</Code>
+		<Description>Премия фиксированная</Description>
+		<ActionPeriodIsBase>false</ActionPeriodIsBase>
+	</Item>
+</PredefinedData>
